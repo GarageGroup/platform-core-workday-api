@@ -33,7 +33,7 @@ partial class WorkdayGetFunc
         var content = await ReadContentAsync(response, cancellationToken).ConfigureAwait(false);
         var code = ParseCodeOrNull(content);
 
-        if (response.IsSuccessStatusCode is false && response.StatusCode is HttpStatusCode.NotFound && code is UnknownWorkdayCode)
+        if (response.StatusCode is HttpStatusCode.NotFound && code is UnknownWorkdayCode)
         {
             return Failure.Create(WorkdayGetFailureCode.UnknownWorkdayStatus, $"Workday {input.Date} information was not found");
         }
