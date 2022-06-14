@@ -35,7 +35,7 @@ partial class WorkdayGetFunc
 
         if (response.IsSuccessStatusCode is false && response.StatusCode is HttpStatusCode.NotFound && code is UnknownWorkdayCode)
         {
-            return Failure.Create(WorkdayGetFailureCode.UnknownWorkdayStatus, $"Information about workday {input.Date} status was not found");
+            return Failure.Create(WorkdayGetFailureCode.UnknownWorkdayStatus, $"Workday {input.Date} information was not found");
         }
 
         if (response.IsSuccessStatusCode is false)
