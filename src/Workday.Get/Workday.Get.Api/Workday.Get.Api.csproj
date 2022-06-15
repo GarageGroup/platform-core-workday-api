@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>GGroupp.Platform</RootNamespace>
+    <AssemblyName>GGroupp.Platform.Core.Workday.Get.Api</AssemblyName>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GGroupp.Platform.Core.Workday.Get.InOut" Version="1.0.0" />
+    <PackageReference Include="PrimeFuncPack.Core.Failure" Version="2.0.1" />
+    <PackageReference Include="PrimeFuncPack.Core.Func.Abstractions.AsyncValue" Version="2.0.0" />
+    <PackageReference Include="PrimeFuncPack.Core.Result" Version="2.0.1" />
+    <PackageReference Include="PrimeFuncPack.Dependency.Core" Version="2.0.2" />
+  </ItemGroup>
+
+</Project>
